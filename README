@@ -1,0 +1,9 @@
+This is a project, using the PureData sound engine in a game. The targeted game is Xinvaders (credited and distributed freely by Jonny Goldman).
+
+The PureData environment receives OSC commands by socket from the invaders game in realtime, for this demo I'm trying out Libl0 (liblo.sourceforge.net/) which is an OSC implementation in ANSI-C.
+
+This is just a proof of concept, so in terms of sound I only generate a sine wave when a "invader" is destroyed by the player.
+
+Inside Pure Data i use dumpOSC (it is deprecated but works for this proof) from Berkley OSC project (cnmat.cnmat.berkeley.edu/OSC).
+
+This is a follow up of the Andy Farnell great tutorial for Pd with game development (obiwannabe.co.uk/tutorials/gamedev/OSC/oschooks.html)! 

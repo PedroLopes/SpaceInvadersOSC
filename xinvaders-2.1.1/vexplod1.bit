@@ -1,0 +1,18 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define vexplode1_width 14
+#define vexplode1_height 8
+static char vexplode1_bits[] = {
+   0x48, 0x04, 0x50, 0x02, 0x00, 0x00, 0x06, 0x18, 0x10, 0x02, 0x88, 0x04,
+   0x80, 0x00, 0x00, 0x00};

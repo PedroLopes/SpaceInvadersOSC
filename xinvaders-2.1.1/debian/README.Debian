@@ -1,0 +1,12 @@
+ I have made this new version (2.0) with sources posted to comp.sources.x by
+Jonny Goldman <jonathan@think.com> on Mon, 8 Mar 1993 22:05:51 GMT.
+
+ I have modified the upstream program to add the capability of saving
+hi-scores. I internationalized the program and translated it to Spanish.
+
+ Unfortunately this package has a non-free license (`software may not be
+sold for profit'). I've tried to contact the author but failed. If you are
+him, or know him, or he's sitting nearby, ask him if he could change the
+license =).
+
+                             Nicolás Lichtmaier <nick@debian.org>

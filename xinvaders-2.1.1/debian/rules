@@ -1,0 +1,63 @@
+#!/usr/bin/make -f
+
+package=xinvaders
+docs=README po/xinvaders.pot
+copyright=debian/copyright
+
+Makefile:
+	./configure --prefix=/usr '--mandir=$${datadir}/man' \
+		--enable-scorefile=/var/lib/games/xinvaders
+
+build-stamp: Makefile
+	dh_testdir widget.c
+	make
+	touch build-stamp
+
+build: build-stamp
+
+clean: Makefile
+	dh_testdir widget.c
+	rm -f build-stamp
+	test -r Makefile && make distclean
+	rm -rf *~ debian/*~ debian/files* $(clean_files) .deps xinvaders-2.*.tar.gz
+	$(clean_tmp)
+	rm -f makefile-stamp
+	dh_clean
+
+# Build architecture-independent files here.
+# (not yet set up to be used)
+binary-indep: build
+	dh_testdir widget.c
+
+# Build architecture-dependent files here.
+binary-arch: build
+	dh_testroot
+	dh_testdir widget.c
+	rm -rf debian/tmp
+	install -d debian/tmp/usr/games debian/tmp/usr/share/man/man6
+	$(MAKE) DESTDIR=$(shell pwd)/debian/tmp install
+	chown root:games debian/tmp/usr/games/xinvaders
+	chmod g+s debian/tmp/usr/games/xinvaders
+	install -d debian/tmp/usr/X11R6/lib/X11/app-defaults
+	install -d debian/tmp/var/lib/games
+	install -p -m0644 Vaders debian/tmp/usr/X11R6/lib/X11/app-defaults/
+	install -p -d debian/tmp/usr/X11R6/include/X11/pixmaps
+	install -p -m0644 icon.xpm debian/tmp/usr/X11R6/include/X11/pixmaps/xinvaders.xpm
+	rm -f debian/tmp/var/lib/games/xinvaders
+	dh_installdirs
+	dh_installdocs $(docs)
+	dh_installchangelogs
+	dh_installmenu
+	dh_installmanpages
+	dh_strip
+	dh_compress
+	dh_suidregister /usr/games/xinvaders
+	dh_fixperms
+	dh_shlibdeps
+	dh_gencontrol
+	dh_installdeb
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-indep binary-arch
+.PHONY: clean binary

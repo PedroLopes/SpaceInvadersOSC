@@ -1,0 +1,199 @@
+xinvaders (2.1.1) unstable; urgency=low
+
+  * Uploaded to Debian as a native package.
+  * Removed call to dh_clean from main Makefile.
+  * Remove .deps directory in debian/rules clean.
+  * Added configure option to specify scorefile and to disable
+    high scores saving.
+  * Improved `make install' for non-debian users.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sat, 16 Sep 2000 17:28:41 -0300
+
+xinvaders (2.1) unstable; urgency=low
+
+  * Uploaded to sunsite so others can also use this version of XInvaders.
+  * Added configure support.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sat,  9 Sep 2000 17:31:52 -0300
+
+xinvaders (2.0-13) unstable; urgency=low
+
+  * Improved menu icon, made it more standard.
+  * Updated debian/shlibs.local to get clean dependencies.
+  * Added note to README.Debian about xinvaders non-free status.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sat,  9 Sep 2000 17:31:52 -0300
+
+xinvaders (2.0-12) unstable; urgency=low
+
+  * Added /var/lib/games to the package (closes:Bug#49018).
+  * Removed some comments from the XPM pixmap file that prevented
+    some programs of handling it well (closes:Bug#51113).
+  * Patch from Kevin Ryde <user42@zip.com.au> to fix the bug that
+    made xinvaders ignore keypresses if the mouse wasn't in the window
+    (closes:Bug#50988).
+  * Added `Build-Depends: xlib6g-dev'.
+  * Changed `Standards-Version' to 3.1.1.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sun, 12 Dec 1999 18:17:12 -0300
+
+xinvaders (2.0-11.1) unstable; urgency=low
+
+  * NMU Upload (closes: #49018,#49020)
+
+ -- Nicholas Flintham <nick@flinny.demon.co.uk>  Sun, 28 Nov 1999 15:06:14 +0000
+
+xinvaders (2.0-11) unstable; urgency=low
+
+  * Moved docs under /usr/share.
+  * Upodated `Standards-Version' to 3.0.1.
+  * Removed one compilation warning (new GCC...).
+  * Added kludge debian/shlibs.local to avoid double dependency (due to
+    nextawg).
+  * Added -O2 flag to gcc.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sun, 10 Oct 1999 18:39:45 -0300
+
+xinvaders (2.0-10) frozen unstable; urgency=low
+
+  * Fixed menu file.
+  * Fixed manpage permissions.
+  * Stripped unneeded sections from executable.
+  * Fixed paths according to newest Debian standards. Changed
+    Standards-Version to 2.5.0.
+  * Adapted to build without root access.
+  * Switched to debhelper.
+  * Copied sell restriction from README to copyright. Fixes bug #17273.
+  * Changed maintainer's address.
+  * Added note to README.Debian about the added capability of saving
+    hiscores.
+
+ -- Nicolás Lichtmaier <nick@debian.org>  Sat,  6 Feb 1999 18:10:41 -0300
+
+xinvaders (2.0-9) frozen unstable; urgency=low
+
+  * Fixed postinst, fixes bug #15218.
+  * Updated maintainer address.
+  * Moved to non-free, fixes bug #17273.
+
+ -- Nicolás Lichtmaier <nick@feedback.net.ar>  Fri,  3 Apr 1998 19:14:13 -0300
+
+xinvaders (2.0-8) unstable; urgency=low
+
+  * Uses libc6 gettext functions.
+  * Keep files' date.
+  * Built with libc6's xlib6, fixes bugs #11958, and #12804.
+  * Changed maintainer address.
+
+ -- Nicolás Lichtmaier <nick@feedback.net.ar>  Tue,  9 Sep 1997 02:22:17 -0300
+
+xinvaders (2.0-7) unstable; urgency=low
+
+  * Changed `Standards-Version' to 2.2.0.0.
+  * Changed to use new menu file format.
+  * Built with libc6.
+
+ -- Nicolás Lichtmaier <nick@feedback.com.ar>  Wed, 16 Jul 1997 17:58:47 -0300
+
+xinvaders (2.0-6) unstable; urgency=low
+
+  * Fixed highscore saving. First user who played was able to change the
+    highscore =).
+
+ -- Nicolás Lichtmaier <nick@feedback.com.ar>  Thu, 27 Feb 1997 00:37:10 -0300
+
+xinvaders (2.0-5) unstable; urgency=low
+
+  * Added highscore saving (made executable setgid games).
+
+ -- Nicolás Lichtmaier <nick@feedback.com.ar>  Wed, 26 Feb 1997 20:14:07 -0300
+
+xinvaders (2.0-4) unstable; urgency=low
+
+  * Cleaned lots of warnings compiling with -Wall.
+  * Added a little image to the package menu.
+  * Corrected my name.. =)
+
+ -- Nicolás Lichtmaier <nick@feedback.com.ar>  Sun, 23 Feb 1997 20:30:08 -0300
+
+xinvaders (2.0-3) unstable; urgency=low
+
+  * Enlarged font by setting a resource.
+  * Internationalized with gettext, and localized for Spanish. File
+    xinvaders.pot included so that users can localize Xinvaders for
+    their language. TODO: Handle the internationalization with the
+    Makefile (I'll probably wait auntil dpkg-source can handle subdirs).
+
+ -- Nicolas Lichtmaier <nick@feedback.com.ar>  Wed, 19 Feb 1997 21:44:58 -0300
+
+xinvaders (2.0-2) unstable; urgency=low
+
+  * Compiled with new xlib6-dev (fixes Bug #7025). It can use Xaw
+    replacements.
+
+ -- Nicolas Lichtmaier <nick@feedback.com.ar>  Sun, 2 Feb 1997 00:05:15 -0300
+
+xinvaders (2.0-1) unstable; urgency=low
+
+  * Upstream changelog included.
+  * New upstream version.
+  * New maintainer.
+
+ -- Nicolas Lichtmaier <nick@feedback.com.ar>  Wed, 29 Jan 1997 17:17:41 -0300
+
+xinvaders (1.3-6) unstable; urgency=routine
+
+  * Previous version made xinvaders dependant on nextaw. Removed that
+    dependancy.
+  * Fixed problem with app-defaults file that was keeping it from finding
+    its libs.
+
+ -- Joey Hess <joeyh@master.debian.org>  Mon, 13 Jan 1997 01:21:10 -0500
+
+xinvaders (1.3-5) unstable; urgency=low
+
+  * Previous version incorrectly put files in /usr/lib/X11, corrected this.
+  * Moved libs into /usr/X11R6/lib/X11/xinvaders.
+  * Moved menu entry to /Games/Arcade.
+  * Routine update of debian/rules:
+    Use build-stamp instead of build.
+
+ -- Joey Hess <joeyh@master.debian.org>  Thu, 9 Jan 1997 15:10:14 -0500
+
+xinvaders (1.3-4) unstable; urgency=low
+
+  * Added a menu-file.
+  * Routine update of debian/rules:
+    New email address.
+
+ -- Joey Hess <joeyh@master.debian.org>  Tue, 17 Dec 1996 14:40:01 -0500
+
+xinvaders (1.3-3) unstable; urgency=low
+
+  * New maintainer: Joey Hess <joeyh@master.debian.org>.
+  * Updated to new package format.
+  * Now registers itself via install-fvwm2menu
+  * Made window size larger.
+    ("*Scale: 2" in app-defaults file.)
+  * Removed app-defaults file from conffiles.
+    (Make local modifications to /etc/X11/Xresources instead.)
+
+ -- Joey Hess <joeyh@master.debian.org>  Sat, 5 Oct 1996 14:50:47 -0400
+
+xinvaders-1.3-2:
+ 960610
+ * ELF binary
+ * Removed Package_Revision from control file.
+ * Removed -m486 compiler option.
+ * Added Architecture, Section and Priority fields to control file.
+
+1.3-1:
+ 950926 Andrew Howell <andrew@it.com.au>
+ * Changed depends to X11R6 and recommended xserver.   
+
+1.3-0:
+ * added Debian GNU/Linux package maintenance system files
+
+Local variables:
+mode: debian-changelog
+End:

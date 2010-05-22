@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-22 16:57+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base.c:188 main.c:221
+msgid " Start"
+msgstr ""
+
+#: base.c:307
+#, c-format
+msgid "Error in row"
+msgstr ""
+
+#: base.c:309
+#, c-format
+msgid "Error in column"
+msgstr ""
+
+#: main.c:227
+msgid " Quit "
+msgstr ""
+
+#: main.c:233
+msgid " Info "
+msgstr ""
+
+#: score.c:41
+msgid "Score"
+msgstr ""
+
+#: score.c:42
+msgid "High"
+msgstr ""
+
+#: shot.c:244
+#, c-format
+msgid "Error reading vshot images.\n"
+msgstr ""
+
+#: spacers.c:165
+#, c-format
+msgid "Error reading Spacer image\n"
+msgstr ""
+
+#: vaders.c:470
+#, c-format
+msgid "Error reading Invader images\n"
+msgstr ""
+
+#: widget.c:269
+msgid "Pause"
+msgstr ""
+
+#: widget.c:275
+msgid "Resume"
+msgstr ""
+
+#: widget.c:341
+msgid "Xinvaders, by Jonny Goldman"
+msgstr ""
+
+#: widget.c:344
+msgid "by Jonny Goldman"
+msgstr ""

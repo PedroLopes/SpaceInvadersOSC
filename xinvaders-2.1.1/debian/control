@@ -1,0 +1,13 @@
+Source: xinvaders
+Build-Depends: xlib6g-dev
+Section: non-free/games
+Priority: optional
+Maintainer: Nicolás Lichtmaier <nick@debian.org>
+Standards-Version: 3.1.1
+
+Package: xinvaders
+Architecture: any
+Depends: ${shlibs:Depends}
+Description: Space Invaders game for X
+ xinvaders is an implementation of the classic Space Invaders game,
+ on top of the X11 window system.

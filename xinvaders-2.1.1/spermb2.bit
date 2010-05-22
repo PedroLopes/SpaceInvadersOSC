@@ -1,0 +1,18 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define spermb2_width 6
+#define spermb2_height 14
+static char spermb2_bits[] = {
+   0x0c, 0x0c, 0x30, 0x30, 0x0c, 0x0c, 0x03, 0x03, 0x0c, 0x0c, 0x30, 0x30,
+   0x0c, 0x0c};

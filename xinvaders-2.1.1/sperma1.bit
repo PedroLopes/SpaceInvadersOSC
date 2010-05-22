@@ -1,0 +1,17 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define sperma1_width 3
+#define sperma1_height 7
+static char sperma1_bits[] = {
+   0x02, 0x01, 0x02, 0x04, 0x02, 0x01, 0x02};

@@ -1,0 +1,5 @@
+#!/bin/sh -e
+test -f /var/lib/games/xinvaders || echo 0 > /var/lib/games/xinvaders
+chown root.games /var/lib/games/xinvaders
+chmod 0660 /var/lib/games/xinvaders
+#DEBHELPER#

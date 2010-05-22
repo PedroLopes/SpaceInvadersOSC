@@ -1,0 +1,18 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define vader2a1_width 12
+#define vader2a1_height 8
+static char vader2a1_bits[] = {
+   0x08, 0x01, 0x90, 0x00, 0xf8, 0x01, 0x6c, 0x03, 0xfe, 0x07, 0xfa, 0x05,
+   0x0a, 0x05, 0x90, 0x00};

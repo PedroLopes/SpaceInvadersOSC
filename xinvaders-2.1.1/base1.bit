@@ -1,0 +1,18 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define base1_width 15
+#define base1_height 10
+static char base1_bits[] = {
+   0x80, 0x00, 0xc0, 0x01, 0xc0, 0x01, 0xe0, 0x03, 0xfe, 0x3f, 0xff, 0x7f,
+   0xff, 0x7f, 0xff, 0x7f, 0xff, 0x7f, 0xff, 0x7f};

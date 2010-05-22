@@ -1,0 +1,5 @@
+#!/bin/sh -e
+if [ "$1" = "purge" ]; then
+	rm -rf /var/lib/games/xinvaders  >/dev/null
+fi
+#DEBHELPER#

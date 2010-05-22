@@ -1,0 +1,18 @@
+/* 
+Copyright notice:
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+Jonny Goldman <jonathan@think.com>
+
+Wed May  8 1991
+*/
+
+#define spacer1_width 16
+#define spacer1_height 8
+static char spacer1_bits[] = {
+   0xc0, 0x03, 0xf0, 0x0f, 0xf8, 0x1f, 0xfc, 0x3f, 0xb6, 0x6d, 0xff, 0xff,
+   0x1c, 0x38, 0x08, 0x10};

@@ -1,0 +1,25 @@
+This is the Debian GNU/Linux prepackaged version of xinvaders.
+xinvaders was written by Jonny Goldman <jgoldman@parc.xerox.com>
+
+This package was put together by Andrew Howell <andrew@it.com.au>,
+from sources obtained from:
+	sunsite.unc.edu:/pub/Linux/games/x11/action/xinvaders.tar.Z
+
+It has been maintained by Joey Hess <joeyh@master.debian.org> and
+it's now being maintained by Nicolás Lichtmaier <nick@debian.org>.
+
+Distribution Policy:
+
+ Anyway you see fit, just give me credit, and software
+ may not be sold for profit.
+
+Copyright notice:
+
+ This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+ any of the code you see fit, but have the courtesy to give me credit.
+ Otherwise great hairy beasties will rip your eyes out and eat your flesh
+ when you least expect it.
+
+ Jonny Goldman <jgoldman@parc.xerox.com>
+
+ Thu Aug 30 1990

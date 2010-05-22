@@ -1,0 +1,61 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(me.h)
+
+AM_INIT_AUTOMAKE(xinvaders, 2.1.1)
+AM_CONFIG_HEADER(config.h)
+
+dnl Checks for programs.
+AC_PROG_CC
+AC_PROG_CPP
+AC_PROG_INSTALL
+AC_PROG_LN_S
+AC_PROG_MAKE_SET
+AC_PROG_RANLIB
+
+AC_ISC_POSIX
+
+dnl Checks for header files.
+AC_PATH_XTRA
+AC_HEADER_STDC
+
+ALL_LINGUAS="es"
+AM_GNU_GETTEXT
+
+LIBS="$LIBS $X_LIBS"
+CFLAGS="$CFLAGS $X_CFLAGS"
+
+dnl Checks for libraries.
+AC_CHECK_LIB(X11, XDrawString)
+AC_CHECK_LIB(Xt, XtInitialize)
+AC_CHECK_LIB(Xmu, main)
+AC_CHECK_LIB(Xaw, main)
+
+SCOREFILE=unset
+
+AC_ARG_ENABLE(scorefile,[  --enable-scorefile=file Enables saving of high score]
+,[
+if [[ -n $enableval -a ! $enableval = yes ]] ; then
+	SCOREFILE=$enableval
+fi
+], )
+
+if [[ $SCOREFILE = unset ]] ; then
+	if [[ $prefix = NONE ]]; then
+		prefix=$ac_default_prefix SCOREFILE=`eval echo ${localstatedir}/${PACKAGE}`
+	else
+		SCOREFILE=`eval echo ${localstatedir}/${PACKAGE}`
+	fi
+fi
+
+if [[ ! $SCOREFILE = no ]] ; then
+AC_DEFINE_UNQUOTED(SCOREFILE,"$SCOREFILE",Score file)
+fi
+
+AC_SUBST(SCOREFILE)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+
+dnl Checks for library functions.
+AC_CHECK_FUNCS(putenv strdup)
+
+AC_OUTPUT(Makefile intl/Makefile po/Makefile.in)

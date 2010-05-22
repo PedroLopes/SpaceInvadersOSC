@@ -1,0 +1,14 @@
+Begin4
+Title: XInvaders
+Version: 2.1.1
+Entered-date: 2000-09-10
+Description: Space Invaders game for X.
+ xinvaders is an implementation of the classic Space Invaders game,
+ on top of the X11 window system.
+Keywords: space invaders, arcade, games, x11, x
+Author: Jonny Goldman <jonathan@think.com>
+Maintained-by: Nicolás Lichtmaier <nick@debian.org>
+Primary-site: ftp://metalab.unc.edu/pub/Linux/games/arcade/invaders/
+Platforms: X11
+Copying-policy: must not be sold for profit, otherwise free
+End

@@ -1,0 +1,167 @@
+.\" Man page for xinvaders, by Jonny Goldman.
+.TH XInvaders 2.1 "Wed May  8 1991"
+.SH NAME
+\fIXInvaders\fR \- Shoot-em-up them nasty little bugs.
+.SH AUTHOR
+.B Jonny Goldman (jonathan@think.com)
+.SH SYNOPSIS
+.B xinvaders
+[-all_those_groovy_xtoolkit_switches]
+.SH DESCRIPTION
+.I xinvaders
+is an implementation of the old Atari Space Invaders game, on top of the
+X11 window system.
+
+.SH PLAYING XINVADERS
+The game will start with all the invaders drawn.  Press 'p' to play, and
+you're off, or use the newly provided buttons.
+
+The controls are:
+
+.PP
+.TP 8
+.B z
+Fire a shot.  You will only be able to fire one shot at a time, so be careful.
+.PP
+.TP 8
+.B ,
+Move left.  Pressing this key will start you moving to the left, releasing it
+will make you stop.
+.PP
+.TP 8
+.B .
+Move right.  Pressing this key will start you moving to the right, releasing it
+will make you stop.
+.PP
+.TP 8
+.B p
+Pause or Play.  Pressing this will either pause the game, or play it.
+Remember, you must press it to start the game (either at the very
+beginning, or between new games).
+.PP
+.TP 8
+.B q
+Quit the game.  Do this and you will end the game.  No ifs, ands or buts
+about it.
+
+.PP
+The mouse controls are active, and rather obvious:
+
+.PP
+.TP 8
+.B Left
+Move left, as above
+.PP
+.TP 8
+.B Middle
+Fire, as above
+.PP
+.TP 8
+.B Right
+Move right.  ditto.
+
+
+.SH SCORING
+
+The lowest monsters are worth 10 points, the next are worth 20, and the
+highest are worth 30.  Space ships are worth anything from 50-300 points
+(in 50 point increments, of course).
+
+
+
+.SH CUSTOMIZING COLORS
+
+As with all standard X applications,
+.I xinvaders
+may be customized through entries in the resource manager.   This game also
+works on monochrome screens, but the colors don't mean anything (surprise!).
+.PP
+.TP 8
+.B Scale
+A switch that allows for multiple resolutions.
+1 for normal resolution, 2 for 2x zoom (the default).
+.PP
+.TP 8
+.B BaseColor
+The color for the Base (you).  Default is white.
+.PP
+.TP 8
+.B  BuildingColor
+The color for the buildings that shield you.  Default is yellow.
+.PP
+.TP 8
+.B Vader1Color
+The color for the highest invaders.  Default is blue.
+.PP
+.TP 8
+.B Vader2Color
+The color for the middle invaders.  Default is orange.
+.PP
+.TP 8
+.B Vader3Color
+The color for the lowest invaders.  Default is red.
+.PP
+.TP 8
+.B SpacerColor
+The color for the Space Ship.  Default is gray.
+.PP
+.TP 8
+.B ShotColor
+The color for your shots.  Default is green.
+.PP
+.TP 8
+.B VshotColor
+The color for their shots.  Default is pink.
+.PP
+.TP 8
+.B ScoreColor
+The color for the score.  Default is cyan.
+
+.PP
+Here's an example of some of the resources you can set (this would be in
+your .Xdefaults file):
+
+ Vaders*Font:                   9x15
+ Vaders*Scale:                  2
+ Vaders*defaultfore:            black
+ Vaders*defaultback:            white
+ Vaders*Vader1Color:            blue
+ Vaders*Vader2Color:            green
+ Vaders*Vader3Color:            red
+ Vaders*BaseColor:              cyan
+ Vaders*BuildingColor:          yellow
+ Vaders*SpacerColor:            gray
+ Vaders*ShotColor:              lavender
+ Vaders*VshotColor:             orange
+ Vaders*BaseWait:               10
+ Vaders*VaderWait:              300
+ Vaders*SpacerWait:             50
+ Vaders*ShotWait:               10
+ Vaders*VshotWait:              30
+
+
+
+.SH NOTES
+
+There are lots of resources.  You can change all the timings involved.
+Have fun with it.
+
+Although you can resize the gamewindow, I don't recommend it.
+
+.SH BUGS
+
+The buildings aren't as good as the arcade, but hey, whatdayawant for free?
+It also doesn't handle auto-repeat very well, so you should probably turn
+it off.
+
+.SH COPYRIGHT
+
+This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+any of the code you see fit, but have the courtesy to give me credit.
+Otherwise great hairy beasties will rip your eyes out and eat your flesh
+when you least expect it.
+
+.SH CREDITS
+
+I'd like to give a lot of credit to Terry Weissman for his roids games.  It
+gave me the guidance on how to do something like this.

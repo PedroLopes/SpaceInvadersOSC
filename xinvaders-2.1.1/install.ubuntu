@@ -1,0 +1,8 @@
+I had to:
+1) Install libxaw7-dev with the libxaw-headers
+2) Added the -lXaw to the libs in the Makefile
+
+Now compiles under ubuntu/debian
+. and , are the <-> for playing
+space gives the shooting
+

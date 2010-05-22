@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: xinvaders 2.1\n"
+"POT-Creation-Date: 2000-09-16 03:54-0300\n"
+"PO-Revision-Date: 1997-02-11 17:32 ARST\n"
+"Last-Translator: Nicolás Lichtmaier <nick@debian.org>\n"
+"Language-Team: es <es@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: base.c:188 main.c:214
+msgid " Start"
+msgstr " Comenzar"
+
+#: base.c:307
+msgid "Error in row"
+msgstr "Error en fila"
+
+#: base.c:309
+msgid "Error in column"
+msgstr "Error en columna"
+
+#: main.c:220
+msgid " Quit "
+msgstr "  Salir  "
+
+#: main.c:226
+msgid " Info "
+msgstr "   Info  "
+
+#: score.c:41
+msgid "Score"
+msgstr "Puntos"
+
+#: score.c:42
+msgid "High"
+msgstr " Marca"
+
+#: shot.c:244
+msgid "Error reading vshot images.\n"
+msgstr "Error leyendo imagenes de balas.\n"
+
+#: spacers.c:165
+msgid "Error reading Spacer image\n"
+msgstr "Error leyendo imagen de Spacer\n"
+
+#: vaders.c:465
+msgid "Error reading Invader images\n"
+msgstr "Error leyendo imagenes de los invasores\n"
+
+#: widget.c:269
+msgid "Pause"
+msgstr "Pausa"
+
+#: widget.c:275
+msgid "Resume"
+msgstr "Continuar"
+
+#: widget.c:341
+msgid "Xinvaders, by Jonny Goldman"
+msgstr "Xinvaders, por Jonny Goldman"
+
+#: widget.c:344
+msgid "by Jonny Goldman"
+msgstr "por Jonny Goldman"

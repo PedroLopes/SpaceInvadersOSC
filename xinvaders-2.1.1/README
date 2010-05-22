@@ -1,0 +1,56 @@
+This is the README file for the XINVADERS game by Jonny Goldman, based on
+the ideas and code of Terry Weissman's roids program.
+
+First:
+
+Author:
+
+ Jonny Goldman <jonathan@think.com>
+
+Distribution Policy:
+
+ Anyway you see fit, just give me credit, and software
+ may not be sold for profit.
+
+Copyright notice:
+
+ This is mine.  I'm only letting you use it.  Period.  Feel free to rip off
+ any of the code you see fit, but have the courtesy to give me credit.
+ Otherwise great hairy beasties will rip your eyes out and eat your flesh
+ when you least expect it.
+
+This archived contains the following files:
+
+ README		- this file
+
+ base.bit	- shape data for the game
+ sperma.bit
+ vader1b.bit
+ vader3a.bit
+ explode.bit
+ spermb.bit
+ vader2a.bit
+ vader3b.bit
+ spacer.bit
+ vader1a.bit
+ vader2b.bit
+ 
+ patchlevel.h   - the current patch level (0 for this release)
+ vaders.h	- the one and only (real) include file
+ me.h		- who do you think?
+ 
+ spacers.c	- sources
+ base.c
+ widget.c
+ main.c
+ vaders.c
+ shot.c
+ score.c
+
+ xinvaders.ma	- a man page (you can add the n at the end).
+
+ Imakefile	- for imake.
+ Makefile	- an example Makefile
+
+This game is known to compile on Sun4's running SunOS 4.0.3. and 4.1, and
+runs under MIT's X11/R4 window system.

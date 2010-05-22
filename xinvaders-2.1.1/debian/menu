@@ -1,0 +1,4 @@
+?package(xinvaders):needs="x11" section="Games/Arcade" \
+icon="/usr/X11R6/include/X11/pixmaps/xinvaders.xpm" \
+title="Space Invaders" command="xinvaders" \
+description="The classic Space Invaders game for X"
